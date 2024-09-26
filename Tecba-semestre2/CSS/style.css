@@ -1,5 +1,9 @@
 h1{
-    font-size: 200px;
-    color: blueviolet;
-    background-color: aqua (10,73,88);
+    font-size: 100px;
+    color: antiquewhite;
+    background-color: black;
+}
+
+p{
+    font-size: 60;
 }
