@@ -1,0 +1,26 @@
+body{
+    background-color:#340000 ;
+}
+h1{
+    font-size: 70px;
+    color: rgb(190, 190, 190);
+    background-color: #140000;
+}
+p{
+    font-size: 25px;
+    color: beige;
+    text-align: justify;
+}
+h2{
+    font-size: 25px;
+    color: beige ;
+    background-color: #140000;
+}
+li{
+    font-size: 25px;
+    color: beige ;
+}
+
+a{
+    color: beige;
+}
