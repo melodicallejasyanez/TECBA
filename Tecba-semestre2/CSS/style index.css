@@ -5,6 +5,7 @@ h1{
     font-size: 70px;
     color: rgb(190, 190, 190);
     background-color: #140000;
+    font-family: cursive;
 }
 p{
     font-size: 25px;
@@ -23,4 +24,15 @@ li{
 
 a{
     color: beige;
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.titulo{
+    font-size: 40px;
 }
