@@ -1,0 +1,95 @@
+body{
+    font-family: "Century Gothic";
+    font-style: italic;
+    font-size: 20px;
+    margin: 0%;
+    background-color: rgb(244, 244, 35);
+    line-height: 2;
+}
+
+header{
+    background-color: rgb(255, 132, 0);
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+.seccion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto{
+    flex: 1;
+    padding: 10px;
+}
+
+.imagen{
+    flex: 1;
+    padding: 20px;
+    height: auto;
+}
+
+.footer{
+    display: flex;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.columna1{
+    flex: 1;
+    color: aliceblue;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.columna{
+    flex: 1;
+    color: aliceblue;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.historia{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.galeria {
+    display: flex;
+    gap: 50px; 
+    width: 100%;
+}
+
+.imagen {
+    overflow: hidden;
+    border-radius: 8px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.22s ease; 
+}
+
+.imagen img {
+    width: 100%; 
+    display: flex; 
+}
+
+.imagen:hover {
+    transform: scale(1.05);
+}
+
+.titulo1{
+    background-color: rgb(255, 132, 0);
+}
+.diseño{
+    background-color: rgb(205, 206, 206);
+    box-sizing: border-box;
+}
