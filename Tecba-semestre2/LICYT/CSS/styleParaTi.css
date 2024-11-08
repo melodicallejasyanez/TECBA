@@ -1,9 +1,10 @@
 body {
     background-color: rgb(135, 68, 20);
+    font-family: "Century Schoolbook";
 }
 
 h1{
-    font-family: Serif;
+    font-family: "Gabriola";
 }
 .navegador{
     display: flex;
@@ -13,6 +14,7 @@ h1{
     margin: 0;  
     color: aquamarine;
     text-decoration: none;
+    font-family: "Gabriola";
 }
 .seccion {
     display: flex;
