@@ -1,0 +1,94 @@
+body {
+    font-family: "Century Schoolbook";
+    color: aliceblue;
+    background-image: url('../IMG/FONDOTOTAL.jpg'); /* Cambia la ruta a la de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    margin: 0; /* Elimina el margen del body */
+    height: 91vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+}
+
+h1{
+    font-family: "Gabriola";
+}
+.navegador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px; 
+    margin: 0;  
+    color: aquamarine;
+    font-family: "Gabriola";
+    background-color: rgba(57, 35, 9, 0.636); /* Negro semi-transparente */
+    padding: 20px;
+}
+a{
+    text-decoration: none; 
+    color: white;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    /* repetirrrrr */
+}
+.sucursales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 0 20px;
+    background-color: rgb(59, 33, 33);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el contenedor de texto (lista de sucursales) */
+.texto {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    max-width: 600px; /* Limita el ancho */
+}
+
+.texto h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Color verde para los subtítulos */
+}
+
+.texto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.texto li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.texto li strong {
+    font-weight: bold;
+    color: #fefdfd;
+}
+
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imagen img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

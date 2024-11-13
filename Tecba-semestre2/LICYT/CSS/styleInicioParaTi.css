@@ -8,13 +8,21 @@ body {
     height: 91vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
 }
 
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+}
+
 h1{
     font-family: "Gabriola";
     font-size: 60px;
+    margin-bottom: 15px;
+    color: #fff;
 }
 h2{
     font-family: "Gabriola";
     font-size: 40px;
+    margin-top: 0;
+    color: #ffcc00; /* Color dorado para el subtítulo */
 }
 .navegador{
     display: flex;
@@ -31,7 +39,13 @@ h2{
 a{
     text-decoration: none; 
     color: white;
-    /* repetir en toditos */
+    padding: 10px;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    /* repetirrrrr */
 }
 
 .seccion {
@@ -39,57 +53,164 @@ a{
     background-color: rgba(57, 35, 9, 0.636); 
 }
 
-.columna_texto {
-    flex: 1;
-    padding: 50px; /* Espacio entre columnas */
-}
 
-.responsabilidad{
-    padding: 0 50px;
-}
-
-.columna_imagen {
-    flex: 1;
-    padding-left: 20px; /* Espacio entre columnas */
+.hero-section {
+    position: relative;
+    height: 569px;
     display: flex;
     justify-content: center;
-    align-items: center; /* Centra la imagen en la columna */
-}
-
-.columna_imagen img {
-    max-width: 90%; /* Para que la imagen no exceda el tamaño de la columna */
-    height: auto;
-}
-
- /* Estilo del contenedor */
-.background-section {  
-    position: relative; /* Necesario para el posicionamiento relativo del contenido */
-    width: 100%;
-    height: 500px;
-    color: white;
-    margin: 0;
-}
-
-/* Estilo del texto */
-.background-section .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    align-items: center;
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    margin: 0;
-    font-size: 40px;
+    color: white;
 }
 
-.footer{
-    background-color: rgb(46, 7, 8);
-    color: beige;
-    position: relative; /* Para permitir el posicionamiento del texto */
-    width: 100%;
-    height: 200px;
-    background-image: url(../IMG/fofo.webp);
-    background-size: cover; /* La imagen cubrirá todo el contenedor */
-    background-position: center; /* Centra la imagen */
-    color: white; /* Color del texto */
-    margin: 0;
+.historia {
+    display: flex;
+    background-color: rgba(57, 35, 9, 0.8);
+    padding: 70px;
+    color: #fff;
+}
+
+.historia .columna_texto {
+    flex: 1;
+    padding: 80px;
+    margin-right: 50px;
+}
+
+.historia h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.historia p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.responsabilidad-social {
+    background-color:rgba(59, 33, 33);
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.responsabilidad-social h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.responsabilidad-social p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+}
+
+.responsabilidad-social img{
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.responsabilidad-social img:hover{
+    transform: scale(1.05);
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.mision-vision .columna_texto {
+    flex: 1;
+    padding: 20px;
+}
+
+.mision-vision h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mision-vision p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.mision-vision img {
+    max-width: 90%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mision-vision .columna_texto{
+    background-color: rgba(57, 35, 9, 0.8);
+}
+
+
+/* Estilo de las columnas */
+.columna_texto {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* Agregar márgenes a las imágenes */
+.columna_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+/* Estilos del contenedor del slider */
+.slider-frame {
+    width: 600px;
+    height: 600px; /* Establecer una altura fija */
+    margin: 50px auto 0;
+    overflow: hidden;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Contenedor de las imágenes en el slider */
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%; /* Esto asegura que las imágenes se repitan de manera adecuada */
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+/* Cada elemento de la lista (cada imagen en el slider) */
+.slider-frame li {
+    width: 25%; /* Ajustamos a un 25% para que haya 4 imágenes por slider */
+    list-style: none;
+}
+
+/* Estilo para las imágenes dentro del slider */
+.slider-frame img {
+    width: 100%; /* Ocupa el 100% del contenedor li */
+    height: 100%; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el contenedor sin distorsionarse */
+}
+
+/* Animación para deslizar las imágenes */
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
 }

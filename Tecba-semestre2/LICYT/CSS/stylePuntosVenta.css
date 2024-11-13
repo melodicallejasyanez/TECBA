@@ -25,28 +25,69 @@ h1{
 a{
     text-decoration: none; 
     color: white;
-    /* repetir en toditos */
+    padding: 10px;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    /* repetirrrrr */
 }
 .footer{
     background-color: rgb(46, 7, 8);
     color: beige;
 }
 
-.sucursales{
+
+.sucursales {
     display: flex;
+    justify-content: space-around; /* Espacio entre las columnas */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    padding: 20px;
     box-sizing: border-box;
 }
-.texto{
-    flex: 1;
+
+/* Cada columna individual (para una ciudad) */
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ocupa 45% del ancho cada columna */
 }
-.imagen{
-    flex: 1;
-    overflow: hidden;
-    border-radius: 5px; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.22s ease; 
+
+/* Imagenes dentro de las columnas */
+.imagen img {
+    width: 100%; /* Aumenta el tamaño de la imagen, ajustando el 80% del ancho del contenedor */
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.22s ease;
+}
+
+/* Estilos de texto */
+.texto a {
+    font-size: 24px; /* Aumenta el tamaño de la fuente */
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
 }
 
 .imagen:hover {
     transform: scale(1.05);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
