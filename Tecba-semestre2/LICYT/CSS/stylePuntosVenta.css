@@ -1,0 +1,52 @@
+body {
+    font-family: "Century Schoolbook";
+    color: aliceblue;
+    background-image: url('../IMG/FONDOTOTAL.jpg'); /* Cambia la ruta a la de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    margin: 0; /* Elimina el margen del body */
+    height: 91vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+}
+
+h1{
+    font-family: "Gabriola";
+}
+.navegador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px; 
+    margin: 0;  
+    color: aquamarine;
+    font-family: "Gabriola";
+    background-color: rgba(57, 35, 9, 0.636); /* Negro semi-transparente */
+    padding: 20px;
+}
+a{
+    text-decoration: none; 
+    color: white;
+    /* repetir en toditos */
+}
+.footer{
+    background-color: rgb(46, 7, 8);
+    color: beige;
+}
+
+.sucursales{
+    display: flex;
+    box-sizing: border-box;
+}
+.texto{
+    flex: 1;
+}
+.imagen{
+    flex: 1;
+    overflow: hidden;
+    border-radius: 5px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.22s ease; 
+}
+
+.imagen:hover {
+    transform: scale(1.05);
+}

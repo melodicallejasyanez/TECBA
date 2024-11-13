@@ -1,0 +1,95 @@
+body {
+    font-family: "Century Schoolbook";
+    color: aliceblue;
+    background-image: url('../IMG/FONDOTOTAL.jpg'); /* Cambia la ruta a la de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    margin: 0; /* Elimina el margen del body */
+    height: 91vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+}
+
+h1{
+    font-family: "Gabriola";
+    font-size: 60px;
+}
+h2{
+    font-family: "Gabriola";
+    font-size: 40px;
+}
+.navegador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px; 
+    margin: 0;  
+    color: aquamarine;
+    font-family: "Gabriola";
+    background-color: rgba(57, 35, 9, 0.636); /* Negro semi-transparente */
+    padding: 20px;
+}
+
+a{
+    text-decoration: none; 
+    color: white;
+    /* repetir en toditos */
+}
+
+.seccion {
+    display: flex;
+    background-color: rgba(57, 35, 9, 0.636); 
+}
+
+.columna_texto {
+    flex: 1;
+    padding: 50px; /* Espacio entre columnas */
+}
+
+.responsabilidad{
+    padding: 0 50px;
+}
+
+.columna_imagen {
+    flex: 1;
+    padding-left: 20px; /* Espacio entre columnas */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra la imagen en la columna */
+}
+
+.columna_imagen img {
+    max-width: 90%; /* Para que la imagen no exceda el tamaño de la columna */
+    height: auto;
+}
+
+ /* Estilo del contenedor */
+.background-section {  
+    position: relative; /* Necesario para el posicionamiento relativo del contenido */
+    width: 100%;
+    height: 500px;
+    color: white;
+    margin: 0;
+}
+
+/* Estilo del texto */
+.background-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+}
+
+.footer{
+    background-color: rgb(46, 7, 8);
+    color: beige;
+    position: relative; /* Para permitir el posicionamiento del texto */
+    width: 100%;
+    height: 200px;
+    background-image: url(../IMG/fofo.webp);
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Color del texto */
+    margin: 0;
+}

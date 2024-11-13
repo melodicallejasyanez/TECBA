@@ -1,0 +1,77 @@
+body {
+    font-family: "Century Schoolbook";
+    color: aliceblue;
+    background-image: url('../IMG/FONDOTOTAL.jpg'); /* Cambia la ruta a la de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    margin: 0; /* Elimina el margen del body */
+    height: 91vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+}
+
+h1{
+    font-family: "Gabriola";
+}
+.navegador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px; 
+    margin: 0;  
+    color: aquamarine;
+    font-family: "Gabriola";
+    background-color: rgba(57, 35, 9, 0.636); /* Negro semi-transparente */
+    padding: 20px;
+}
+a{
+    text-decoration: none; 
+    color: white;
+    /* repetir en toditos */
+}
+
+li{
+    list-style: none;
+    color: white;
+}
+.footer{
+    background-color: rgb(46, 7, 8);
+    color: beige;
+}
+.categoria{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.izquierda{
+    flex: 0 0 25%;
+    padding: 30px;
+    background-color: rgba(57, 35, 9, 0.636);
+    box-sizing: border-box;
+}
+
+.derecha{
+    flex: 0 0 75%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.galeria {
+    display: flex;
+    gap: 50px; 
+    width: 100%;
+}
+
+.imagen {
+    overflow: hidden;
+    border-radius: 8px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.22s ease; 
+}
+
+.imagen img {
+    width: 100%; 
+    display: flex; 
+}
+
+.imagen:hover {
+    transform: scale(1.05);
+}
+
